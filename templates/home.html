@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PyBlogger</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
             <ul class="cbp_tmtimeline">
                 <li>
                     <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>{{ post['date'] }}</span> <span>{{ post['time'] }}</span></time>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                    <div class="cbp_tmicon cbp_tmicon-phone"><i class="fa fa-mobile"></i></div>
                     <div class="cbp_tmlabel">
                         <h2>{{ post['title'] }}</h2>
                         <p>{{ post['content'] }}</p>
@@ -33,17 +34,6 @@
     </div>
 </body>
 <style>
-    @font-face {
-	font-family: 'ecoico';
-	src:url('../fonts/timelineicons/ecoico.eot');
-	src:url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/timelineicons/ecoico.woff') format('woff'),
-		url('../fonts/timelineicons/ecoico.ttf') format('truetype'),
-		url('../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
-	font-weight: normal;    
-	font-style: normal;
-} /* Made with http://icomoon.io/ */
-
 .cbp_tmtimeline {
 	margin: 30px 0 0 0;
 	padding: 0;
@@ -157,22 +147,6 @@
 	left: 20%;
 	top: 0;
 	margin: 0 0 0 -25px;
-}
-
-.cbp_tmicon-phone:before {
-	content: "e000";
-}
-
-.cbp_tmicon-screen:before {
-	content: "e001";
-}
-
-.cbp_tmicon-mail:before {
-	content: "e002";
-}
-
-.cbp_tmicon-earth:before {
-	content: "e003";
 }
 
 /* Example Media Queries */
